@@ -1,0 +1,5 @@
+print("Bem-Vindo ao Sistema \n")
+print("Digite a opção desejada: \n")
+print("Opção 1: Estudar Python \n")
+print("Opção 2: Ouvir Ghost \n")
+print("Opção 3: Encerrar sistema \n")
