@@ -1,9 +1,9 @@
 Sou professor de TI com foco em formação prática, preparando alunos para o mercado de trabalho por meio de projetos reais, tecnologias modernas e fundamentos bem consolidados.
 
 🚀 Tecnologias e Ferramentas
-🗄️ Banco de Dados
-MySQL
+🗄️ Banco de Dados MySQL
 Modelagem Conceitual, Lógica e Física
+
 🐍 Python & IoT
 Python para introdução ao mundo IoT
 Arduino
