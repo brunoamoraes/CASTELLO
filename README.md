@@ -6,7 +6,7 @@
 > **Instituição:** CFP – 5.05 Escola SENAI “Luiz Varga”  
 > **Professor:** Bruno Augusto de Moraes  
 
-Este repositório centraliza os conteúdos pedagógicos, exemplos de códigos estruturados, listas de atividades e projetos práticos desenvolvidos ao longo do 1º Termo para as turmas do Curso Técnico em Desenvolvimento de Sistemas (ex: DEVIE-1/26).
+Este repositório centraliza os conteúdos pedagógicos, exemplos de códigos estruturados, listas de atividades e projetos práticos desenvolvidos ao longo do 1º Termo para as turmas do Curso Técnico em Desenvolvimento de Sistemas (ex: DEVIE-1e2/26).
 
 O objetivo principal é a construção de uma base sólida em lógica de programação e algoritmos utilizando **Python**, além dos fundamentos de **Banco de Dados (SQL)** e **Linguagem de Marcação (HTML/CSS)**.
 
