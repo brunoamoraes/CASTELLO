@@ -1,12 +1,13 @@
--- Active: 1788267997462@@127.0.0.1@3306@smartcoffee_dml_bruno
--- SMARTCOFFEE BASE DE DADOS - DML 
--- EXECUTE SEMPRE QUE QUISER RESTAURAR A AULA
+-- ============================================================
+-- SMARTCOFFEE - BASE DE DADOS PARA AULA 08 - DML
+-- MySQL 8+
+-- Execute este arquivo sempre que quiser restaurar a aula.
+-- ============================================================
 
-DROP DATABASE IF EXISTS SMARTCOFFEE_DML_BRUNO;
-CREATE DATABASE SMARTCOFFEE_DML_BRUNO;
-USE SMARTCOFFEE_DML_BRUNO;
+DROP DATABASE IF EXISTS smartcoffee_dml_bruno;
+CREATE DATABASE smartcoffee_dml_bruno;
+USE smartcoffee_dml_bruno;
 
--- TABELAS
 CREATE TABLE cliente (
     id_cliente INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(100) NOT NULL,
@@ -27,7 +28,6 @@ CREATE TABLE produto (
     preco DECIMAL(10,2) NOT NULL,
     ativo BOOLEAN NOT NULL DEFAULT TRUE,
     id_categoria INT NOT NULL,
-    -- constraint : significa uma restrição e declaração de chave estrangeira
     CONSTRAINT fk_produto_categoria FOREIGN KEY (id_categoria)
         REFERENCES categoria(id_categoria)
 );
@@ -82,14 +82,11 @@ INSERT INTO cliente (nome, email, telefone, cidade, ativo) VALUES
 ('Felipe Lima', 'felipe@email.com', '19999990006', 'Americana', TRUE),
 ('Gabriela Alves', 'gabriela@email.com', '19999990007', 'Piracicaba', TRUE),
 ('Henrique Costa', 'henrique@email.com', NULL, 'Limeira', FALSE),
-('Isabeli Martins', 'isabeli@email.com', '19999990009', 'Campinas', TRUE),
+('Isabela Martins', 'isabela@email.com', '19999990009', 'Campinas', TRUE),
 ('João Pereira', 'joao@email.com', '19999990010', 'Limeira', TRUE);
 
 INSERT INTO categoria (nome) VALUES
 ('Cafés'), ('Bebidas Geladas'), ('Doces'), ('Salgados'), ('Combos');
-
-SELECT * FROM cliente;
-
 
 INSERT INTO produto (nome, preco, ativo, id_categoria) VALUES
 ('Café Espresso', 7.00, TRUE, 1), ('Café Duplo', 10.00, TRUE, 1),
@@ -102,22 +99,17 @@ INSERT INTO produto (nome, preco, ativo, id_categoria) VALUES
 ('Combo Café + Pão de Queijo', 12.50, TRUE, 5),
 ('Combo Cappuccino + Brownie', 20.00, TRUE, 5), ('Torta Especial', 22.00, FALSE, 3);
 
-select * from categoria;
 INSERT INTO pedido (data_pedido, status, valor_total, id_cliente) VALUES
 ('2026-09-01 08:15:00', 'FINALIZADO', 16.00, 1),
 ('2026-09-01 09:30:00', 'FINALIZADO', 26.00, 2),
 ('2026-09-02 10:20:00', 'CANCELADO', 18.00, 3),
--- ('2026-09-03 14:10:00', 'FINALIZADO', 35.50, 1),
--- ('2026-09-04 16:40:00', 'FINALIZADO', 20.00, 4),
--- ('2026-09-05 11:05:00', 'PREPARANDO', 31.50, 5),
--- ('2026-09-06 08:50:00', 'FINALIZADO', 28.00, 6),
--- ('2026-09-07 17:25:00', 'FINALIZADO', 44.00, 2),
--- ('2026-09-08 13:15:00', 'ABERTO', 13.00, 7),
--- ('2026-09-09 09:45:00', 'FINALIZADO', 39.00, 1),
-(NOW(), 'ABERTO', 0.00, 8);
-
-SET @PEDIDO = LAST_INSERT_ID();
-SELECT @PEDIDO;
+('2026-09-03 14:10:00', 'FINALIZADO', 35.50, 1),
+('2026-09-04 16:40:00', 'FINALIZADO', 20.00, 4),
+('2026-09-05 11:05:00', 'PREPARANDO', 31.50, 5),
+('2026-09-06 08:50:00', 'FINALIZADO', 28.00, 6),
+('2026-09-07 17:25:00', 'FINALIZADO', 44.00, 2),
+('2026-09-08 13:15:00', 'ABERTO', 13.00, 7),
+('2026-09-09 09:45:00', 'FINALIZADO', 39.00, 1);
 
 INSERT INTO item_pedido (id_pedido, id_produto, quantidade, preco_unitario, observacao) VALUES
 (1,1,1,7.00,NULL),(1,9,1,9.00,NULL),(2,4,2,13.00,'Sem canela'),
@@ -135,84 +127,4 @@ INSERT INTO pagamento (id_pedido, id_forma_pagamento, valor, data_pagamento) VAL
 (7,1,28.00,'2026-09-06 09:00:00'),(8,3,30.00,'2026-09-07 17:30:00'),
 (8,2,14.00,'2026-09-07 17:31:00'),(10,2,39.00,'2026-09-09 09:50:00');
 
-
-
--- EX 1 : UPDATE OU ATUALIZAÇÕES DE DADOS
-UPDATE cliente
-SET telefone = '19999990210'
-WHERE ID_CLIENTE = 3;
--- DETERMINAR O COMANDO WHERE SEMPRE :)
-
-SELECT * FROM CLIENTE;
-
--- EX 2: ATUALIZANDO VÁRIOS CAMPOS
-UPDATE cliente
-SET telefone = '199999981213',
-    cidade = 'Piracicaba'
-WHERE id_cliente = 4;
-
--- EX 3 : ATUALIZANDO VÁRIOS REGISTROS
-UPDATE produto
-SET preco = preco * 1.05
-WHERE id_categoria = 1;
-
--- EX 4 : ATUALIZANDO SEM WHERE
--- UPDATE produto
--- SET preco = 1.00;
--- CUIDADO AO UTILIZAR ESSA LINHA
-
--- EX 5 : ATUALIZANDO CONDICIONAIS
-UPDATE produto
-SET preco = CASE 
-    WHEN preco <= 15 THEN preco * 1.10
-    ELSE preco * 1.05
-END
-WHERE ativo = TRUE;
-
--- EX 6 : ATUALIZANDO PARA NULL
-UPDATE cliente
-SET telefone = NULL
-WHERE id_cliente = 5;
--- TUDO ATUALIZAÇÕES OU MODIFICAÇÃO DE DADOS
-
-
--- DESAFIOS PARTE A
--- 1. Cadastre dois novos clientes
-insert into cliente (nome, email, telefone, cidade, ativo) values
-('Lucas Pereira', 'lucas@email.com', '19999990011', 'Piracicaba', TRUE),
-('Mariana Costa', 'mariana@email.com', '19999990012', 'Limeira', TRUE);
-
--- 2. Cadastre uma nova categoria Especiais da Casa
-insert  
-
--- EX 1 : EXCLUIR REGISTROS OU DADOS
-DELETE FROM cliente
-WHERE id_cliente = 10;
-
--- EX 2: EXCLUIR REGISTROS COM ESTRUTURA LÓGICA
-UPDATE produto
-SET ativo = FALSE
-WHERE id_produto = 17;
-
-UPDATE cliente
-set ativo = FALSE
-WHERE id_cliente = 8;
-
-
--- LIMPAR TABELA OU REMOVER TODOS OS REGISTROS
-TRUNCATE TABLE cliente;
-
-
-
-
--- CONSULTAR INFORMAÇÕES NO BD
-SELECT * FROM cliente;
--- CONSULTA POR ID
-SELECT * FROM produto
-WHERE id_categoria = 1;
-
-
-
-
--- MENSAGEM DE SUCESSO
-SELECT 'BANCO DE DADOS SMARTCOFFEE CRIADO COM SUCESSO!' AS mensagem;
+SELECT 'Base smartcoffee_dml criada com sucesso.' AS mensagem;
