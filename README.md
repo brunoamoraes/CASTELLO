@@ -1,65 +1,126 @@
-# 🐍 Lógica de Programação e Algoritmos (LOPAL)
-# 🗄️ Banco de Dados (BCD)
-# 🌐 Linguagem de Marcação (LIMA)
+<p align="center">
+  <img src="banner-castello.png"
+       alt="Desenvolvimento de Sistemas - Castello"
+       width="100%">
+</p>
 
-> **Componente Curricular:** Lógica de Programação e Algoritmos (LOPAL), Banco de Dados (BCD) e Linguagem de Marcação (LIMA)  
-> **Instituição:** CFP – 5.05 Escola SENAI “Luiz Varga”  
-> **Professor:** Bruno Augusto de Moraes  
+# 💻 Desenvolvimento de Sistemas — Castello
 
-Este repositório centraliza os conteúdos pedagógicos, exemplos de códigos estruturados, listas de atividades e projetos práticos desenvolvidos ao longo do 1º Termo para as turmas do Curso Técnico em Desenvolvimento de Sistemas (ex: DEVIE-1e2/26).
+Repositório acadêmico destinado à organização dos **conteúdos, códigos, atividades, situações de aprendizagem e projetos** desenvolvidos no Curso Técnico em Desenvolvimento de Sistemas.
 
-O objetivo principal é a construção de uma base sólida em lógica de programação e algoritmos utilizando **Python**, além dos fundamentos de **Banco de Dados (SQL)** e **Linguagem de Marcação (HTML/CSS)**.
-
----
-
-## 🚀 Trilha de Aprendizagem & Conteúdos
-
-Abaixo está o cronograma lógico das aulas com acesso direto aos códigos e materiais de apoio desenvolvidos em sala de aula:
-
-| Aula / Módulo | Componente | Conteúdo Principal | Exemplos Práticos | Status |
-| :---: | :---: | :--- | :---: | :---: |
-| **Aula 01** | LOPAL | Entrada e Saída de dados (`input` / `print`) | [Ver código](./BRUNO%20(CASTELLO)/TURMA%20B/AULA1/) | ✅ Concluído |
-| **Aula 02** | LOPAL | Estruturas Condicionais (`if`, `elif`, `else`) | [Ver código](./BRUNO%20(CASTELLO)/TURMA%20B/AULA2/) | ✅ Concluído |
-| **Aula 03** | LOPAL | Estruturas de Repetição (`while` e `for`) | [Ver código](./BRUNO%20(CASTELLO)/TURMA%20B/AULA3/) | ✅ Concluído |
-| **Aula 04** | LOPAL | Funções e Modularização | [Ver código](./BRUNO%20(CASTELLO)/TURMA%20B/AULA4/) | ⏳ Em andamento |
-| **Aula 07** | LOPAL | Aplicação Prática Integrada (Automação) | [Ver código](./BRUNO%20(CASTELLO)/TURMA%20B/AULA7/sete.py) | ✅ Concluído |
+A proposta é utilizar o GitHub não apenas como espaço de armazenamento, mas como parte do processo de aprendizagem: **versionamento, documentação, organização de projetos e construção de portfólio técnico**.
 
 ---
 
-## 📝 Banco de Atividades Práticas
+## 🗺️ Trilha de aprendizagem
 
-Exercícios individuais de fixação, desafios de lógica e avaliações formativas aplicadas para validação de capacidades técnicas:
-
-- [x] **[Lista Parte I]** Exercícios de fixação sobre operações matemáticas e *f-strings*.
-- [x] **[Lista Parte II]** Tomada de decisão matemática (Verificação de médias e áreas).
-- [x] **[Lista Parte III]** Estruturas condicionais compostas.
-- [x] **[Lista Parte IV] Situação de Aprendizagem: O Caça-Erros** 🕵️‍♂️  
-  *Atividade focada em identificação de erros de sintaxe, indentação, compatibilidade de tipos de dados e prevenção de loops infinitos.*
-
----
-
-## 🛠️ Situações de Aprendizagem (Projetos)
-
-Os desafios práticos conectam as capacidades técnicas a cenários reais do mercado de trabalho.
-
-### 🚗 Projeto em Destaque: Automação de Cancelas (Shopping Center)
-* **Descrição:** Desenvolvimento de lógica estruturada simulando o ecossistema de controle de acesso, verificação de lotação e regras tarifárias de um estacionamento.
-* **Capacidades Avaliadas:**
-  * Validação de acessos via **Ticket Impresso** ou **TAG de Acesso Rápido** (Sem Parar / ConectCar).
-  * Controle de fluxo de dados considerando o limite de **500 vagas**.
-  * Cálculo complexo de tarifas (tolerância até 15 min, tarifa fixa de 3h, horas adicionais e regras/descontos VIP).
-* **Diretório do Projeto:** [Ver Arquivo (`sete.py`)](./BRUNO%20(CASTELLO)/TURMA%20B/AULA7/sete.py)
+| Termo | Unidade Curricular | Principais conteúdos |
+|---|---|---|
+| **1º Termo** | 🐍 Lógica de Programação | Python, algoritmos, estruturas condicionais, repetições, funções e resolução de problemas |
+| **1º Termo** | 🖥️ Sistemas Operacionais | Linux, Windows, terminal, arquivos, processos e administração básica |
+| **1º Termo** | 📋 Levantamento de Requisitos | Fluxogramas, documentação, requisitos funcionais e não funcionais, modelagem de processos |
+| **1º Termo** | 🌐 Arquitetura de Redes e IoT | Redes, protocolos, conectividade, IoT e princípios da Indústria 4.0 |
+| **2º Termo** | 🧱 Linguagem de Marcação | HTML5, CSS3, JavaScript e construção de interfaces Web |
+| **2º Termo** | 🗄️ Banco de Dados | Modelagem, SQL, MySQL e PostgreSQL |
+| **2º Termo** | ⚙️ Backend | JavaScript, Node.js, APIs e integração com banco de dados |
+| **2º Termo** | 🚀 Projetos | Integração das competências em soluções e protótipos funcionais |
 
 ---
 
-## ⚙️ Requisitos para Execução
+## 🛠️ Tecnologias trabalhadas
 
-Para clonar este repositório e executar os exemplos localmente:
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
+  <img src="https://img.shields.io/badge/Windows-0078D4?style=for-the-badge&logo=windows&logoColor=white" alt="Windows">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js">
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+</p>
 
-1. Instale o **Python 3.10+** (certifique-se de marcar a opção *"Add Python to PATH"* durante a instalação).
-2. Recomendado o uso do **Visual Studio Code (VS Code)** com as extensões *Python* e *Pylance*.
-3. Clone o repositório utilizando o terminal:
+---
+
+## 📂 Organização do repositório
+
+Atualmente, os materiais estão concentrados na pasta:
+
+- 📁 [`AULAS`](./AULAS/) — conteúdos, códigos, atividades e materiais desenvolvidos ao longo das unidades curriculares.
+
+À medida que o curso evoluir, a recomendação é manter uma organização semelhante a:
+
+```text
+AULAS/
+├── 1_TERMO/
+│   ├── LOPAL/
+│   ├── SISTEMAS_OPERACIONAIS/
+│   ├── LEVANTAMENTO_REQUISITOS/
+│   └── REDES_IOT/
+└── 2_TERMO/
+    ├── LINGUAGEM_MARCACAO/
+    ├── BANCO_DADOS/
+    ├── BACKEND/
+    └── PROJETOS/
+```
+
+---
+
+## 🧩 Metodologia de trabalho
+
+Os conteúdos são desenvolvidos de forma progressiva, combinando **fundamentação teórica, demonstrações, exercícios, situações-problema e projetos integradores**.
+
+Durante as aulas, os estudantes são incentivados a:
+
+- interpretar problemas antes de iniciar a codificação;
+- documentar decisões e requisitos;
+- utilizar Git e GitHub para versionamento;
+- construir soluções incrementalmente;
+- testar, revisar e refatorar códigos;
+- relacionar diferentes unidades curriculares em projetos integrados.
+
+---
+
+## 🚀 Projetos e situações de aprendizagem
+
+Os projetos deste repositório buscam aproximar os conteúdos técnicos de cenários reais, envolvendo temas como:
+
+**automação**, **sistemas Web**, **banco de dados**, **redes**, **IoT**, **controle de acesso**, **gestão de informações** e **soluções para indústria e comunidade**.
+
+> O objetivo não é apenas fazer o código funcionar, mas compreender o problema, estruturar a solução e documentar o processo de desenvolvimento.
+
+---
+
+## ✅ Boas práticas para os alunos
+
+Antes de iniciar uma atividade:
 
 ```bash
-git clone [https://github.com/brunoamoraes/CASTELLO.git](https://github.com/brunoamoraes/CASTELLO.git)
-cd CASTELLO
+git pull
+```
+
+Após concluir uma etapa:
+
+```bash
+git add .
+git commit -m "feat: descrição da atividade"
+git push
+```
+
+Utilize mensagens de commit claras e mantenha cada projeto com um `README.md` próprio sempre que possível.
+
+---
+
+## 👨‍🏫 Professor
+
+**Bruno Augusto de Moraes**  
+Desenvolvimento de Sistemas • Programação • Banco de Dados • Redes • IoT
+
+---
+
+<p align="center">
+  <strong>Aprender tecnologia é transformar problemas em soluções.</strong>
+</p>
