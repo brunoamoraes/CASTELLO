@@ -1,0 +1,3 @@
+-- Active: 1788267997462@@127.0.0.1@3306@smartcoffee_dml_bruno
+-- PARTE A
+-- 1. CADASTRE DOIS NOVOS CLIENTE

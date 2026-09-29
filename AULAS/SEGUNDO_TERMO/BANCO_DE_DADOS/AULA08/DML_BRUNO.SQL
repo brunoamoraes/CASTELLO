@@ -85,6 +85,8 @@ INSERT INTO cliente (nome, email, telefone, cidade, ativo) VALUES
 ('Isabela Martins', 'isabela@email.com', '19999990009', 'Campinas', TRUE),
 ('João Pereira', 'joao@email.com', '19999990010', 'Limeira', TRUE);
 
+
+
 INSERT INTO categoria (nome) VALUES
 ('Cafés'), ('Bebidas Geladas'), ('Doces'), ('Salgados'), ('Combos');
 
