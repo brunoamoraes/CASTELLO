@@ -31,3 +31,8 @@ h1 {
     padding-bottom: 10px;
     
 }
+
+.card-cafe {
+    display: flex;
+}
+

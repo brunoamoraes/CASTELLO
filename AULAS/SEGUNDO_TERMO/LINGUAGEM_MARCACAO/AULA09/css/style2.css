@@ -1,0 +1,10 @@
+header a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.banner {
+    background-color: antiquewhite;
+    padding: 20px;
+}
