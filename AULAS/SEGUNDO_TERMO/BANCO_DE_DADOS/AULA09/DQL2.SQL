@@ -178,19 +178,65 @@ FROM pedido;
 SELECT nome, COALESCE(telefone, 'Não Informado') AS Contato
 FROM cliente;
 
+-- EX 15: FUNÇÕES DE AGREGAÇÃO - SUM, AVG, MIN, MAX, COUNT 
+-- COUNT - CONTAR QUANTIDADE DE REGISTROS
+-- SUM - SOMA DE VALORES
+-- AVG - MÉDIA DE VALORES
+-- MIN - MENOR VALOR
+-- MAX - MAIOR VALOR
+
+SELECT COUNT(*) AS Total_Clientes
+FROM cliente;
+-- RESULTADO DE QUANTIDADE DE CLIENTES
+
+SELECT AVG(preco) AS Média_Preços
+FROM produto;
+-- MÉDIA DO VALOR DOS PRODUTOS
+
+SELECT MIN(preco) AS PROMOÇÃO, MAX(preco) AS REAJUSTE, AVG(preco) AS MÉDIA_PREÇOS
+FROM produto;
+-- RESUMO DE PREÇOS
+
+SELECT SUM(valor_total) AS FATURAMENTO_MENSAL
+FROM pedido
+WHERE status = 'ABERTO'
+-- TOTAL DE PEDIDOS FINALIZADOS
+
+-- EX 16: GROUP BY - AGRUPAR DADOS
+SELECT cidade, COUNT(*) AS QTDE_CIDADES
+FROM cliente
+GROUP BY cidade;
+-- CONSULTA POR GRUPOS DE CIDADES
+
+SELECT id_categoria, COUNT(*) AS QTDE_PRODUTOS
+FROM produto
+GROUP BY id_categoria;
+-- QUANTIDADE DE PRODUTOS POR CATEGORIA
+
+-- EX 17: HAVING - FILTRO POR GRUPOS
+SELECT cidade, COUNT(*) AS QUANTIDADE_CLIENTES
+FROM cliente
+GROUP BY cidade
+HAVING COUNT(*) >= 2;
+-- DICA: USAR O HAVING E NÃO ESQUECER O GROUP BY
 
 
 
+--------------------------------------------------------------------------
+-- EX 18: CONSULTA COMPLETA
+SELECT colunas
+FROM tabela
+WHERE condicao
+GROUP BY colunas_agrupar
+HAVING condicao
+ORDER BY colunas
+LIMIT quantidade;
+-- DICA PARA SEGUIR EM ORDEM LÓGICA PARA UMA CONSULTA PARCIAL OU COMPLETA
+--------------------------------------------------------------------------
 
 
-
-
-
-
-
-
-
-
+SELECT COUNT(nome) AS Total_Produtos
+FROM produto;
 
 
 

@@ -1,15 +1,15 @@
+-- Active: 1788267997462@@127.0.0.1@3306@smartcoffee_dml_bruno
 -- ============================================================
 -- AULA 09 - ATIVIDADE PRÁTICA DE DQL
 -- Nome: _______________________________________________
 -- Turma: ______________________ Data: _________________
 -- Base: smartcoffee_dql
 -- ============================================================
-USE smartcoffee_dql_bruno;
+USE smartcoffee_dql;
 
 -- PARTE A - AQUECIMENTO
 
 -- 1. Liste todos os clientes cadastrados.
-SELECT * FROM cliente;
 
 
 -- 2. Exiba apenas nome, cidade e e-mail dos clientes.
