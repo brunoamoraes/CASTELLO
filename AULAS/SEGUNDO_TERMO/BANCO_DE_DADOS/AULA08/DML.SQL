@@ -216,3 +216,28 @@ WHERE id_categoria = 1;
 
 -- MENSAGEM DE SUCESSO
 SELECT 'BANCO DE DADOS SMARTCOFFEE CRIADO COM SUCESSO!' AS mensagem;
+
+-- TRANSAÇÕES -- SEGURANÇA E INTEGRIDADE DOS DADOS
+-- EX 1: 
+START TRANSACTION;
+UPDATE produto
+SET preco = preco * 1.50
+WHERE id_categoria = 1;
+
+SELECT id_produto, nome, preco
+FROM produto
+WHERE id_categoria = 1;
+
+-- DESFAZER AÇÕES
+ROLLBACK;
+
+-- REALIZAR OU CONFIRMA A AÇÃO
+COMMIT
+
+-- EX 2:
+START TRANSACTION;
+UPDATE cliente
+SET cidade = 'Limeira'
+WHERE id_cliente = 3;
+COMMIT;
+ROLLBACK;
