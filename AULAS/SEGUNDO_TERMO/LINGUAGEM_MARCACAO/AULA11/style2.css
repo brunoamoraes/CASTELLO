@@ -1,0 +1,72 @@
+/* Desktop */
+.grid-ca {
+    display: grid;
+    /* grid-template-columns: 4fr 4fr 4fr 1fr; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 2fr)) ;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 30px;
+    align-items: center;
+    height: 100px;
+    background-color: blueviolet;
+}
+
+.grid-img-ca {
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+     grid-template-columns: repeat(auto-fit, minmax(220px, 2fr)) ;
+    height: auto;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+/* Responsividade de Conteúdo e Imagens */
+@media (max-width: 468px) {
+    .grid-ca {
+        grid-template-columns: 1fr;
+    }
+    .grid-ca {
+        grid-template-columns: 1fr;
+    }
+}
+/* Tablets */
+@media (max-width: 600px) {
+    .grid-ca {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Celular */
+@media (max-width: 300px) {
+    .grid-ca {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Responsividade com Flexbox */
+.flex-ban {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+@media (max-width: 700px) {
+    .flex-ban {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .grid-ca {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .grid-img-ca {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
