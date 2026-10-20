@@ -25,7 +25,15 @@
 img {
     width: 100%;
     height: auto;
-    display: inline-block;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    content: cover;
+    cursor: cell;
+    color: #fff;
+    grid-gap: 32px;
+    object-fit: cover;
+    
+
 }
 
 .flex-grid {
@@ -54,6 +62,7 @@ img {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 @media (max-width: 700px) {
