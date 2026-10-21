@@ -1,0 +1,168 @@
+/* ROOT: Podemos guardar nossas cores e informações gerais em um único lugar
+ */
+
+:root {
+    /* Paleta de Cores */
+    --creme: #F3E6D7;
+    --preto: black;
+    --branco: #FFFFFF;
+
+    /* Tipografia */
+    --fonte-principal: 'Times New Roman', serif;
+    --fonte-texto: 'Arial';
+    --fonte-secundaria: "Open Sans", sans-serif;
+
+    /* Espaçamento */
+    --espaco-xs: 4px;
+    --espaco-sm: 8px;
+    --espaco-md: 16px;
+    --espaco-lg: 24px
+    
+}
+
+/* Configurações de Reset Básico */
+* {
+    /* Permite alterar configurações de todo o html */
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: var(--fonte-secundaria);
+    font-weight: 800;
+    color: var(--preto);
+    background-color: var(--creme);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Fim das configurações básicas */
+
+.id-v {
+    height: 100px;
+    background-color: var(--creme);
+    color: var(--branco);
+    font-family: var(--fonte-texto);
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    color: var(--creme);
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font: 1.25rem;
+}
+
+.id-nav {
+    display: flex;
+    gap: var(--espaco-lg);
+    list-style: none;
+    margin: 20px;
+    padding: 20px;
+}
+
+.id-nav a {
+    color: var(--preto);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.id-nav a:hover {
+    color: blue;
+    background-color: black;
+}
+
+/* Aplicação de funcionalidade e acessibilidade por teclado */
+.id-nav a:focus-visible {
+    outline: 10px dashed var(--branco);
+    outline-offset: 10px;
+}
+
+.id-ban {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 80px 8%;
+    background-color: var(--branco);
+}
+
+.id-ban-img {
+    flex: 1;
+}
+
+.id-ban-img {
+    margin: 0;
+}
+
+.id-ban-img img {
+    width: 100%;
+    border-radius: 18px;
+}
+
+.botao-id {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 12px 24px;
+    background-color: var(--preto);
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 16px;
+    transition: backgroud-color 0.2s ease;
+}
+
+.botao-id:hover {
+    background-color: var(--creme);
+}
+
+.id-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.id-grid-cart {
+    height: 100%;
+    padding: 20px;
+    background-color: var(--branco);
+    border: 2px solid var(--creme);
+    border-radius: 14px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.id-grid-cart img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(43, 23, 13,0.08);
+}
+
+.id-grid-cart:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(43,23,13,0.12);
+}
+
+
+
