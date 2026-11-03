@@ -1,0 +1,961 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="2300" viewBox="0 0 1200 2300">
+
+<defs>
+
+    <linearGradient
+        id="hero"
+        x1="0"
+        y1="0"
+        x2="1"
+        y2="1"
+    >
+        <stop
+            offset="0"
+            stop-color="#F7EBDD"
+        />
+
+        <stop
+            offset="1"
+            stop-color="#FFF9F3"
+        />
+    </linearGradient>
+
+
+    <linearGradient
+        id="dark"
+        x1="0"
+        y1="0"
+        x2="1"
+        y2="1"
+    >
+        <stop
+            offset="0"
+            stop-color="#2B170D"
+        />
+
+        <stop
+            offset="1"
+            stop-color="#5A321B"
+        />
+    </linearGradient>
+
+
+    <filter
+        id="shadow"
+        x="-20%"
+        y="-20%"
+        width="140%"
+        height="140%"
+    >
+        <feDropShadow
+            dx="0"
+            dy="12"
+            stdDeviation="14"
+            flood-color="#2B170D"
+            flood-opacity=".12"
+        />
+    </filter>
+
+
+    <style>
+        text {
+            font-family:
+                Poppins,
+                Arial,
+                sans-serif;
+
+            fill:
+                #1E140F;
+        }
+
+        .brand {
+            font-size:
+                31px;
+
+            font-weight:
+                700;
+        }
+
+        .nav {
+            font-size:
+                17px;
+        }
+
+        .h1 {
+            font-size:
+                56px;
+
+            font-weight:
+                700;
+        }
+
+        .h2 {
+            font-size:
+                38px;
+
+            font-weight:
+                700;
+        }
+
+        .p {
+            font-size:
+                20px;
+        }
+
+        .small {
+            font-size:
+                16px;
+        }
+
+        .eyebrow {
+            font-size:
+                13px;
+
+            font-weight:
+                700;
+
+            letter-spacing:
+                4px;
+
+            fill:
+                #C66A1A;
+        }
+
+        .white {
+            fill:
+                #FFFFFF;
+        }
+
+        .muted {
+            fill:
+                #9A887A;
+        }
+
+        .card {
+            fill:
+                #FFFFFF;
+
+            stroke:
+                #E7D8C8;
+
+            stroke-width:
+                1;
+        }
+
+        .image {
+            fill:
+                #B3A79E;
+        }
+
+        .imageDark {
+            fill:
+                #9A887A;
+        }
+
+        .button {
+            fill:
+                #C66A1A;
+        }
+
+        .buttonOutline {
+            fill:
+                none;
+
+            stroke:
+                #C66A1A;
+
+            stroke-width:
+                2;
+        }
+    </style>
+
+</defs>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<rect
+    x="0"
+    y="0"
+    width="1200"
+    height="120"
+    fill="#2B170D"
+/>
+
+<text
+    x="70"
+    y="74"
+    class="brand white"
+>
+    Smart
+    <tspan fill="#C66A1A">
+        Coffee
+    </tspan>
+</text>
+
+<text
+    x="600"
+    y="73"
+    class="nav white"
+>
+    Início
+</text>
+
+<text
+    x="680"
+    y="73"
+    class="nav white"
+>
+    Sobre
+</text>
+
+<text
+    x="765"
+    y="73"
+    class="nav white"
+>
+    Produtos
+</text>
+
+<text
+    x="865"
+    y="73"
+    class="nav white"
+>
+    Ambiente
+</text>
+
+<text
+    x="970"
+    y="73"
+    class="nav white"
+>
+    Contato
+</text>
+
+<rect
+    x="1068"
+    y="32"
+    width="108"
+    height="54"
+    rx="27"
+    class="button"
+/>
+
+<text
+    x="1080"
+    y="66"
+    class="small white"
+>
+    Cardápio
+</text>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<rect
+    x="0"
+    y="120"
+    width="1200"
+    height="430"
+    fill="url(#hero)"
+/>
+
+<text
+    x="70"
+    y="190"
+    class="eyebrow"
+>
+    SABORES QUE CONECTAM
+</text>
+
+<text
+    x="70"
+    y="275"
+    class="h1"
+>
+    Café que
+</text>
+
+<text
+    x="70"
+    y="338"
+    class="h1"
+>
+    conecta pessoas
+</text>
+
+<text
+    x="70"
+    y="390"
+    class="p"
+>
+    Mais que café, uma experiência.
+</text>
+
+<text
+    x="70"
+    y="422"
+    class="small muted"
+>
+    Um espaço para conversar, trabalhar, estudar
+</text>
+
+<text
+    x="70"
+    y="446"
+    class="small muted"
+>
+    e compartilhar boas ideias.
+</text>
+
+<rect
+    x="70"
+    y="474"
+    width="196"
+    height="54"
+    rx="27"
+    class="button"
+/>
+
+<text
+    x="105"
+    y="508"
+    class="small white"
+>
+    Ver cardápio
+</text>
+
+<rect
+    x="610"
+    y="160"
+    width="520"
+    height="350"
+    rx="14"
+    class="image"
+    filter="url(#shadow)"
+/>
+
+<path
+    d="M760 390 L840 265 L920 390 Z"
+    fill="#7D6D61"
+/>
+
+<circle
+    cx="947"
+    cy="254"
+    r="30"
+    fill="#7D6D61"
+/>
+
+<text
+    x="800"
+    y="455"
+    class="small"
+    fill="#67594F"
+>
+    imagem principal
+</text>
+
+
+<!-- =========================
+     SOBRE
+========================= -->
+
+<rect
+    x="0"
+    y="550"
+    width="1200"
+    height="400"
+    fill="#FFFDF9"
+/>
+
+<rect
+    x="70"
+    y="610"
+    width="500"
+    height="285"
+    rx="14"
+    class="image"
+    filter="url(#shadow)"
+/>
+
+<path
+    d="M208 830 L285 705 L362 830 Z"
+    fill="#7D6D61"
+/>
+
+<circle
+    cx="386"
+    cy="694"
+    r="27"
+    fill="#7D6D61"
+/>
+
+<text
+    x="620"
+    y="650"
+    class="eyebrow"
+>
+    QUEM SOMOS
+</text>
+
+<text
+    x="620"
+    y="710"
+    class="h2"
+>
+    Sobre nós
+</text>
+
+<text
+    x="620"
+    y="758"
+    class="p"
+>
+    A SmartCoffee combina café de qualidade,
+</text>
+
+<text
+    x="620"
+    y="790"
+    class="p"
+>
+    tecnologia e um ambiente acolhedor.
+</text>
+
+<text
+    x="620"
+    y="822"
+    class="small muted"
+>
+    Experiências que aproximam pessoas.
+</text>
+
+<rect
+    x="620"
+    y="850"
+    width="145"
+    height="48"
+    rx="24"
+    class="buttonOutline"
+/>
+
+<text
+    x="650"
+    y="881"
+    class="small"
+>
+    Saiba mais
+</text>
+
+
+<!-- =========================
+     PRODUTOS
+========================= -->
+
+<rect
+    x="0"
+    y="950"
+    width="1200"
+    height="600"
+    fill="#F3E6D7"
+/>
+
+<text
+    x="490"
+    y="1022"
+    class="eyebrow"
+>
+    NOSSOS PRODUTOS
+</text>
+
+<text
+    x="465"
+    y="1078"
+    class="h2"
+>
+    Nossos cafés
+</text>
+
+<text
+    x="410"
+    y="1113"
+    class="small muted"
+>
+    Três escolhas para diferentes momentos do seu dia.
+</text>
+
+
+<!-- CARD 1 -->
+
+<rect
+    x="70"
+    y="1160"
+    width="310"
+    height="325"
+    rx="14"
+    class="card"
+    filter="url(#shadow)"
+/>
+
+<rect
+    x="70"
+    y="1160"
+    width="310"
+    height="165"
+    rx="14"
+    class="image"
+/>
+
+<path
+    d="M165 1294 L215 1212 L265 1294 Z"
+    fill="#7D6D61"
+/>
+
+<circle
+    cx="284"
+    cy="1215"
+    r="18"
+    fill="#7D6D61"
+/>
+
+<text
+    x="92"
+    y="1362"
+    class="small"
+    style="font-weight:700"
+>
+    Cappuccino Tradicional
+</text>
+
+<text
+    x="92"
+    y="1398"
+    class="small muted"
+>
+    Equilíbrio entre café,
+</text>
+
+<text
+    x="92"
+    y="1421"
+    class="small muted"
+>
+    leite e cremosidade.
+</text>
+
+<text
+    x="92"
+    y="1462"
+    class="p"
+    style="font-weight:700"
+>
+    R$ 14,90
+</text>
+
+
+<!-- CARD 2 -->
+
+<rect
+    x="445"
+    y="1160"
+    width="310"
+    height="325"
+    rx="14"
+    class="card"
+    filter="url(#shadow)"
+/>
+
+<rect
+    x="445"
+    y="1160"
+    width="310"
+    height="165"
+    rx="14"
+    class="image"
+/>
+
+<path
+    d="M540 1294 L590 1212 L640 1294 Z"
+    fill="#7D6D61"
+/>
+
+<circle
+    cx="659"
+    cy="1215"
+    r="18"
+    fill="#7D6D61"
+/>
+
+<text
+    x="467"
+    y="1362"
+    class="small"
+    style="font-weight:700"
+>
+    Latte Caramelo
+</text>
+
+<text
+    x="467"
+    y="1398"
+    class="small muted"
+>
+    Leve, doce e irresistível.
+</text>
+
+<text
+    x="467"
+    y="1462"
+    class="p"
+    style="font-weight:700"
+>
+    R$ 16,90
+</text>
+
+
+<!-- CARD 3 -->
+
+<rect
+    x="820"
+    y="1160"
+    width="310"
+    height="325"
+    rx="14"
+    class="card"
+    filter="url(#shadow)"
+/>
+
+<rect
+    x="820"
+    y="1160"
+    width="310"
+    height="165"
+    rx="14"
+    class="image"
+/>
+
+<path
+    d="M915 1294 L965 1212 L1015 1294 Z"
+    fill="#7D6D61"
+/>
+
+<circle
+    cx="1034"
+    cy="1215"
+    r="18"
+    fill="#7D6D61"
+/>
+
+<text
+    x="842"
+    y="1362"
+    class="small"
+    style="font-weight:700"
+>
+    Espresso Especial
+</text>
+
+<text
+    x="842"
+    y="1398"
+    class="small muted"
+>
+    Intenso como boas conversas.
+</text>
+
+<text
+    x="842"
+    y="1462"
+    class="p"
+    style="font-weight:700"
+>
+    R$ 12,90
+</text>
+
+
+<!-- =========================
+     AMBIENTE
+========================= -->
+
+<rect
+    x="0"
+    y="1550"
+    width="1200"
+    height="400"
+    fill="url(#dark)"
+/>
+
+<text
+    x="70"
+    y="1618"
+    class="eyebrow"
+    fill="#E9B77D"
+>
+    NOSSO AMBIENTE
+</text>
+
+<text
+    x="70"
+    y="1680"
+    class="h2 white"
+>
+    Um espaço para
+</text>
+
+<text
+    x="70"
+    y="1725"
+    class="h2 white"
+>
+    boas ideias
+</text>
+
+<text
+    x="70"
+    y="1774"
+    class="p white"
+>
+    Ambiente moderno, confortável e acolhedor.
+</text>
+
+<text
+    x="70"
+    y="1806"
+    class="small white"
+>
+    Para trabalhar, estudar, conversar ou relaxar.
+</text>
+
+<rect
+    x="70"
+    y="1840"
+    width="210"
+    height="54"
+    rx="27"
+    class="button"
+/>
+
+<text
+    x="92"
+    y="1874"
+    class="small white"
+>
+    Conheça o espaço
+</text>
+
+<rect
+    x="605"
+    y="1595"
+    width="525"
+    height="310"
+    rx="14"
+    fill="#B4A69B"
+    filter="url(#shadow)"
+/>
+
+<path
+    d="M765 1840 L840 1720 L915 1840 Z"
+    fill="#7D6D61"
+/>
+
+<circle
+    cx="942"
+    cy="1708"
+    r="30"
+    fill="#7D6D61"
+/>
+
+
+<!-- =========================
+     CONTATO
+========================= -->
+
+<rect
+    x="0"
+    y="1950"
+    width="1200"
+    height="250"
+    fill="#FFF9F3"
+/>
+
+<text
+    x="70"
+    y="2010"
+    class="eyebrow"
+>
+    CONTATO
+</text>
+
+<text
+    x="70"
+    y="2065"
+    class="h2"
+>
+    Fale com a gente
+</text>
+
+<text
+    x="70"
+    y="2105"
+    class="small muted"
+>
+    Tem dúvidas, sugestões ou quer realizar um evento?
+</text>
+
+<text
+    x="70"
+    y="2130"
+    class="small muted"
+>
+    Envie uma mensagem para nossa equipe.
+</text>
+
+<text
+    x="620"
+    y="1987"
+    class="small"
+>
+    Nome
+</text>
+
+<rect
+    x="620"
+    y="1996"
+    width="510"
+    height="38"
+    rx="6"
+    fill="#FFFFFF"
+    stroke="#CBB9A8"
+/>
+
+<text
+    x="620"
+    y="2060"
+    class="small"
+>
+    E-mail
+</text>
+
+<rect
+    x="620"
+    y="2069"
+    width="510"
+    height="38"
+    rx="6"
+    fill="#FFFFFF"
+    stroke="#CBB9A8"
+/>
+
+<text
+    x="620"
+    y="2133"
+    class="small"
+>
+    Mensagem
+</text>
+
+<rect
+    x="620"
+    y="2142"
+    width="510"
+    height="42"
+    rx="6"
+    fill="#FFFFFF"
+    stroke="#CBB9A8"
+/>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<rect
+    x="0"
+    y="2200"
+    width="1200"
+    height="100"
+    fill="#2B170D"
+/>
+
+<text
+    x="70"
+    y="2258"
+    class="brand white"
+>
+    Smart
+    <tspan fill="#C66A1A">
+        Coffee
+    </tspan>
+</text>
+
+<text
+    x="445"
+    y="2258"
+    class="small white"
+>
+    Início
+</text>
+
+<text
+    x="510"
+    y="2258"
+    class="small white"
+>
+    Sobre
+</text>
+
+<text
+    x="575"
+    y="2258"
+    class="small white"
+>
+    Produtos
+</text>
+
+<text
+    x="665"
+    y="2258"
+    class="small white"
+>
+    Ambiente
+</text>
+
+<text
+    x="760"
+    y="2258"
+    class="small white"
+>
+    Contato
+</text>
+
+<text
+    x="940"
+    y="2258"
+    class="small white"
+>
+    Instagram
+</text>
+
+<text
+    x="1030"
+    y="2258"
+    class="small white"
+>
+    Facebook
+</text>
+
+<text
+    x="1110"
+    y="2258"
+    class="small white"
+>
+    LinkedIn
+</text>
+
+</svg>
