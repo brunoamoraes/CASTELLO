@@ -1,0 +1,105 @@
+:root {
+    /* Paleta de cores do SmartCoffee */
+    --espresso: #2B170D;
+    --cafe: #5A321B;
+    --caramelo: #C66A1A;
+    --creme: #F3E6D7;
+    --marfim: #FFF9F3;
+    --taupe: #9A887A;
+    --texto: #1E140F;
+    --branco: #FFFFFF;
+
+    /* Definições complementares de borda, sombra, raio e espaçamento de texto */
+    --borda: #E7D8C8;
+    --sombra: 0 14px 34px rgba(43,23,13,0.09);
+    --sombra-hover: 0 18px 42px rgba(43,23,13,0.14);
+    --raio: 14px;
+    --espaco-peq: 8px;
+    --espaco-medio: 16px;
+    --espaco-grande: 24px;
+    --espaco-egrande: 40px;
+    --espaco-xgrande: 64px;
+    --espaco-xxgrande: 80px;
+}
+
+/* Configuração principal - reset inicial de layout */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: var(--branco);
+    background-color: var(--marfim);
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1, h2, h3, p {
+    margin-top: 0;
+}
+
+input, textarea, button {
+    font: inherit;
+}
+
+/* Cabeçalho do site */
+.cabecalho-principal {
+    min-height: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--espaco-medio);
+    padding: 16px max(6vw, 24px);
+    background-color: var(--espresso);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.marca {
+    color: var(--branco);
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 1;
+}
+
+.marca span, .marca-rodape span {
+    color: var(--caramelo);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: var(--espaco-peq);
+}
+
+.menu a {
+    color: var(--branco);
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease, backgroud-color 0.2s ease, transform 0.2s ease;
+}
