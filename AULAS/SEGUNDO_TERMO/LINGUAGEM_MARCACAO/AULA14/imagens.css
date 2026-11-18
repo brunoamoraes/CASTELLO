@@ -1,0 +1,71 @@
+.resp-bas {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.img-rec img {
+    width: 100%;
+    aspect-ratio: 4 / 3; 
+    /* Formato da Imagem a preencher, 4 / 3 também pode ser usado ou 16 / 10 */
+    object-fit: cover;
+    object-position: 70% center;
+    border-radius: 100px;
+}
+
+.img-card img{
+    /* Primeiro Modelo */
+    /* width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover; */
+
+    /* Segundo Modelo */
+    width: 220px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.pers-img img {
+    border-radius: 18px;
+    box-shadow: 0 18px 40px rgba(15,23,42,0.18);
+
+    transition: transform .25s ease, filter .25s ease;
+
+}
+
+.pers-img:hover {
+    transform: scale(1.03);
+    /* filter: saturate(1.08) contrast(1.03); */
+    filter: grayscale(1);
+    filter: sepia(.7);
+    filter: brightness(.85);
+    filter: contrast(1.15);
+    filter: saturate(1.2);
+    filter: blur(4px);
+}
+
+.sec-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.img-grid img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.video-bd {
+    /* display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 16px; */
+
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 18px;
+}
